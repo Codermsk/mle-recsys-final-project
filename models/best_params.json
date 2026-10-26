@@ -1,0 +1,14 @@
+{
+  "params": {
+    "loss_function": "MultiClass",
+    "iterations": 600,
+    "learning_rate": 0.1,
+    "depth": 6,
+    "l2_leaf_reg": 3,
+    "one_hot_max_size": 255,
+    "random_seed": 42,
+    "thread_count": -1
+  },
+  "iterations": 690,
+  "experiment": "catboost_full"
+}

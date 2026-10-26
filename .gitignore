@@ -1,0 +1,21 @@
+# данные
+*.csv
+*.zip
+*.parquet
+data/
+
+# окружение и кэши
+.venv/
+venv/
+__pycache__/
+*.pyc
+.cache/
+.ipynb_checkpoints/
+catboost_info/
+.DS_Store
+.env
+
+# MLflow
+mlflow/
+mlruns/
+mlartifacts/

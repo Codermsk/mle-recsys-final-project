@@ -1,0 +1,22 @@
+# данные и модель
+pandas==2.2.3
+numpy==1.26.4
+pyarrow==18.1.0
+scikit-learn==1.6.1
+catboost==1.2.8
+
+# эксперименты
+mlflow==2.20.3
+sqlalchemy==2.0.38
+matplotlib==3.9.4
+seaborn==0.13.2
+jupyter==1.1.1
+ipykernel==7.4.0
+
+# сервис
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+pydantic==2.10.6
+prometheus-client==0.21.1
+prometheus-fastapi-instrumentator==7.1.0
+requests==2.32.3

@@ -1,0 +1,9 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+pydantic==2.10.6
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==18.1.0
+catboost==1.2.8
+prometheus-client==0.21.1
+prometheus-fastapi-instrumentator==7.1.0
