@@ -5,15 +5,28 @@
 Модель обучена на данных Santander Product Recommendation (17 месячных снимков базы
 клиентов, январь 2015 - май 2016) и работает как веб-сервис с мониторингом.
 
-**Стек:** Python 3.11, pandas, CatBoost, MLflow (SQLite + хранилище артефактов),
-FastAPI, Docker Compose, Prometheus, Grafana.
+## Стек
+
+| Задача | Инструменты |
+|---|---|
+| Язык | Python 3.11 |
+| Данные и признаки | pandas 2.2, NumPy 1.26, PyArrow (parquet) |
+| Модель | CatBoost 1.2 (многоклассовая классификация) |
+| Эксперименты | MLflow 2.20: метаданные в SQLite, артефакты в отдельном хранилище, Model Registry |
+| Анализ | Jupyter, matplotlib, seaborn |
+| Сервис | FastAPI, Uvicorn, Pydantic |
+| Развёртывание | Docker, Docker Compose |
+| Мониторинг | Prometheus, Grafana, prometheus-fastapi-instrumentator |
+
+Точные версии библиотек - в `requirements.txt`.
 
 ## Структура репозитория
 
 ```
 ├── notebooks/
 │   ├── 01_eda.ipynb             # исследовательский анализ данных
-│   └── 02_experiments.ipynb     # эксперименты с моделями, логирование в MLflow
+│   ├── 02_experiments.ipynb     # эксперименты с моделями, логирование в MLflow
+│   └── bank_recsys_project.ipynb  # EDA и эксперименты одним ноутбуком (для сдачи на проверку)
 ├── src/
 │   ├── data.py                  # загрузка и очистка исходного CSV
 │   ├── features.py              # построение признаков и обучающей выборки
