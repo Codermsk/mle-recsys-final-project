@@ -5,7 +5,7 @@
 Модель обучена на данных Santander Product Recommendation (17 месячных снимков базы
 клиентов, январь 2015 - май 2016) и работает как веб-сервис с мониторингом.
 
-**Технологии:** Python 3.11, pandas, CatBoost, MLflow (SQLite + хранилище артефактов),
+**Стек:** Python 3.11, pandas, CatBoost, MLflow (SQLite + хранилище артефактов),
 FastAPI, Docker Compose, Prometheus, Grafana.
 
 ## Структура репозитория
